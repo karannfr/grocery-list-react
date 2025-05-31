@@ -41,7 +41,7 @@ body {
   margin: 16px 48px;
   display: flex;
   flex-direction: row;
-  width: 32vw;
+  width: 36vw;
 }
 .add input {
   padding: 20px 32px;
@@ -81,4 +81,75 @@ body {
     opacity: 50%;
     font-size: large;
     cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .App span{
+    font-weight: bold;
+    font-size: x-large;
+    margin: 48px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  .App span input{
+    padding: 20px 32px;
+    margin-top: 16px;
+    margin-left: 0;
+  }
+  .add{
+    margin: 16px 48px;
+    display: flex;
+    flex-direction: row;
+    width: 75vw;
+  }
+  .add button{
+  background-color: #2A7B9B;
+  border-radius: 32px;
+  width: 96px;
+  margin-left: -64px;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  color: white;
+  font-size: large;
+  cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .add{
+  margin: 16px 48px;
+  display: flex;
+  flex-direction: row;
+  min-width: 468px;
+  width: 32vw;
+  }
+  .add button{
+    background-color: #2A7B9B;
+    border-radius: 32px;
+    width: 128px;
+    margin-left: -64px;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    color: white;
+    font-size: large;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .add{
+    margin: 16px 24px;
+    display: flex;
+    flex-direction: row;
+    width: 75vw;
+  }
+  .add button{
+  background-color: #2A7B9B;
+  border-radius: 32px;
+  width: 64px;
+  margin-left: -64px;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  color: white;
+  font-size: large;
+  cursor: pointer;
+  }
 }
