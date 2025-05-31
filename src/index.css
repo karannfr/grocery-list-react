@@ -5,9 +5,80 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #2A7B9B;
+  background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: white;
+    padding-bottom: 48px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.164);
+}
+.App span{
+    font-weight: bold;
+    font-size: xx-large;
+    margin: 48px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.App span input{
+  flex: 1;
+  margin-left: 12px;
+  padding-left: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  border-radius: 32px; 
+}
+.add{
+  margin: 16px 48px;
+  display: flex;
+  flex-direction: row;
+  width: 32vw;
+}
+.add input {
+  padding: 20px 32px;
+  flex: 1;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  border-radius: 32px;
+}
+.add button {
+  background-color: #2A7B9B;
+  border-radius: 32px;
+  width: 128px;
+  margin-left: -64px;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  color: white;
+  font-size: large;
+  cursor: pointer;
+}
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 8px 48px;
+}
+.item .check {
+    width: 24px;
+    border-radius: 1000px;
+}
+.item p{
+    flex: 1;
+    margin-left: 24px;
+    font-size: large;
+    font-weight: medium;
+}
+.item .delete {
+    border: none;
+    background-color: white;
+    opacity: 50%;
+    font-size: large;
+    cursor: pointer;
 }
